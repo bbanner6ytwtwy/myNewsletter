@@ -1,0 +1,45 @@
+html,
+body {
+  height: 100%;
+  
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: conic-gradient(rgb(255, 0, 0) 0%, rgb(255, 0, 55) 20%, rgb(204, 204, 204) 20%, rgb(185, 185, 185) 30%, rgb(255, 1, 1) 30%, rgb(255, 1, 56) 70%, rgb(184, 184, 184) 70%, rgb(228, 228, 228) 80%, rgb(255, 72, 0) 80%, rgb(255, 0, 13) 90%, rgb(202, 202, 202) 90%, rgb(204, 204, 204) 100%);
+}
+.headLogo{
+  width: 100px;
+}
+.form-signin {
+  max-width: 400px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+@font-face {
+  font-family: horror;
+  src: url("./horror.ttf");
+  font-weight: bold;
+}
+.h3{
+  font-family: horror;
+  font-size: 50px;
+}
