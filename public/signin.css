@@ -44,5 +44,5 @@ body {
   font-size: 50px;
 }
 .input-red{
-  outline-color: 2px solid red;
+  outline: 2px solid red;
 }
