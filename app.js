@@ -32,7 +32,7 @@ app.post("/", (req, res) => {
             const response = await axios.post(url, subscriber, {
                 auth: {
                     username: 'apikey',
-                    password: apiKey
+                    password: process.env.API_KEY
                 }
             });
             if (response.status === 200) {
