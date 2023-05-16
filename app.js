@@ -8,6 +8,7 @@ const port = 3000;
 
 const apiKey = process.env.Api_Key;
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 app.use(express.static("public"));
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
@@ -31,7 +32,7 @@ app.post("/", (req, res) => {
         try {
             const response = await axios.post(url, subscriber, {
                 auth: {
-                    username: 'apikey',
+                    username: 'akintunde',
                     password: process.env.API_KEY
                 }
             });
