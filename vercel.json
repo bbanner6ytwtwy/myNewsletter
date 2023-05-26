@@ -1,16 +1,29 @@
 {
     "version": 2,
-    "name": "Newlstter",
+    "name": "Newsletter",
     "builds": [
       {
         "src": "app.js",
         "use": "@vercel/node"
+      },
+      {
+        "src": "styles.css",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
+      {
+        "src": "/app.js",
+        "dest": "/app.js"
+      },
+      {
+        "src": "/styles.css",
+        "dest": "/styles.css"
+      },
       {
         "src": "/(.*)",
         "dest": "/app.js"
       }
     ]
   }
+  
