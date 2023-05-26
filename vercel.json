@@ -7,7 +7,7 @@
         "use": "@vercel/node"
       },
       {
-        "src": "styles.css",
+        "src": "signin.css",
         "use": "@vercel/static"
       }
     ],
@@ -17,8 +17,8 @@
         "dest": "/app.js"
       },
       {
-        "src": "/styles.css",
-        "dest": "/styles.css"
+        "src": "/signin.css",
+        "dest": "/signin.css"
       },
       {
         "src": "/(.*)",
