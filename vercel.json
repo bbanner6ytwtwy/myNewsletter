@@ -5,25 +5,14 @@
       {
         "src": "app.js",
         "use": "@vercel/node"
-      },
-      {
-        "src": "signin.css",
-        "use": "@vercel/static"
       }
     ],
     "routes": [
       {
-        "src": "/app.js",
-        "dest": "/app.js"
-      },
-      {
-        "src": "/signin.css",
-        "dest": "/signin.css"
-      },
-      {
         "src": "/(.*)",
-        "dest": "/app.js"
+        "dest": "app.js"
       }
-    ]
+    ],
+    "public": true
   }
   
