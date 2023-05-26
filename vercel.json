@@ -1,13 +1,21 @@
-{
-    "rewrites": [
-      {
-        "source": "/signin.css",
-        "destination": "/public/signin.css"
-      },
-      {
-        "source": "/(.*)",
-        "destination": "/app.js"
+ {
+        "version": 2,
+        "name": "Newsletter",
+        "builds": [
+          {
+            "src": "app.js",
+            "use": "@vercel/node"
+          }, 
+          {
+            "source": "/signin.css",
+            "destination": "/public/signin.css"
+          }
+        ],
+        "routes": [
+          {
+            "src": "/(.*)",
+            "dest": "app.js"
+          }
+        ]
       }
-    ]
-  }
   
