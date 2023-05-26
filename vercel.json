@@ -1,16 +1,12 @@
 {
-    "version": 2,
-    "name": "Newsletter",
-    "builds": [
+    "rewrites": [
       {
-        "src": "app.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
+        "source": "/signin.css",
+        "destination": "/public/signin.css"
+      },
       {
-        "src": "/(.*)",
-        "dest": "app.js"
+        "source": "/(.*)",
+        "destination": "/app.js"
       }
     ]
   }
